@@ -1,11 +1,12 @@
 ---
 layout: default
 permalink: /blog/
-title: blog
-nav: true
-nav_order: 1
+title: games
+description: Here are a few games I enjoyed playing. 
+nav: false
+nav_order: 7
 pagination:
-  enabled: true
+  enabled: false
   collection: posts
   permalink: /page/:num/
   per_page: 5
@@ -16,6 +17,10 @@ pagination:
     after: 3 # The number of links after the current page
 ---
 
+<iframe src="https://lichess.org/embed/game/jxilWcoQ?theme=auto&bg=auto"
+width=600 height=397 frameborder=0></iframe>
+
+<!-- 
 <div class="post">
 
 {% assign blog_name_size = site.blog_name | size %}
@@ -193,4 +198,4 @@ pagination:
 {% include pagination.liquid %}
 {% endif %}
 
-</div>
+</div> -->

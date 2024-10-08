@@ -13,7 +13,7 @@
             {% endif %}
             <!-- Calculate colspan number for category title -->
             {% assign i = 1 %}
-            {% for item in content.items %}
+            {% for item in content.keywords %}
               {% assign i = i | plus: 1 %}
             {% endfor %}
             <td colspan="{{ i }}" class="list-group-category">{{ content.name }}</td>
@@ -22,7 +22,7 @@
             <tr>
               <td></td>
               <td class="list-group-name">
-                <b>{{ item }}</b>
+                <b>{{ item.keyword }}: <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">[Click here]</a></b>
               </td>
             </tr>
           {% endfor %}

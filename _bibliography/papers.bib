@@ -1,9 +1,12 @@
 ---
----
-
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
+ preview={iccit2023.gif},
+ You can add extra information to a publication, like a PDF file in the assets/pdf/ directory and 
+ add the path to the PDF file in the BibTeX entry with the pdf field. 
+ Some of the supported fields are: abstract, altmetric, arxiv, bibtex_show, blog, code, dimensions, 
+ doi, eprint, html, isbn, pdf, pmid, poster, slides, supp, video, and website.
+ 
+e.g.
+at-book{einstein1920relativity,
   title={Relativity: the Special and General Theory},
   author={Einstein, Albert},
   year={1920},
@@ -11,7 +14,7 @@
   html={relativity.html}
 }
 
-@book{einstein1956investigations,
+at-book{einstein1956investigations,
   bibtex_show={true},
   title={Investigations on the Theory of the Brownian Movement},
   author={Einstein, Albert},
@@ -20,7 +23,7 @@
   preview={brownian-motion.gif}
 }
 
-@article{einstein1950meaning,
+at-article{einstein1950meaning,
   abbr={AJP},
   bibtex_show={true},
   title={The meaning of relativity},
@@ -33,7 +36,7 @@
   publisher={American Association of Physics Teachers}
 }
 
-@article{PhysRev.47.777,
+at-article{PhysRev.47.777,
   abbr={PhysRev},
   title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
   author={Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
@@ -61,7 +64,7 @@
   inspirehep_id = {3255}
 }
 
-@article{einstein1905molekularkinetischen,
+at-article{einstein1905molekularkinetischen,
   title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
   author={Einstein, A.},
   journal={Annalen der physik},
@@ -72,7 +75,7 @@
   publisher={Wiley Online Library}
 }
 
-@article{einstein1905movement,
+at-article{einstein1905movement,
   abbr={Ann. Phys.},
   title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
   author={Einstein, A.},
@@ -82,13 +85,13 @@
   year={1905}
 }
 
-@article{einstein1905electrodynamics,
+at-article{einstein1905electrodynamics,
   title={On the electrodynamics of moving bodies},
   author={Einstein, A.},
   year={1905}
 }
 
-@Article{einstein1905photoelectriceffect,
+at-Article{einstein1905photoelectriceffect,
   bibtex_show={true},
   abbr={Ann. Phys.},
   title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
@@ -104,7 +107,7 @@
   award_name={Nobel Prize}
 }
 
-@book{przibram1967letters,
+at-book{przibram1967letters,
   bibtex_show={true},
   title={Letters on wave mechanics},
   author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
@@ -113,3 +116,23 @@
   preview={wave-mechanics.gif},
   abbr={Vision}
 }
+---
+
+@string{aps = {American Physical Society,}}
+
+@INPROCEEDINGS{10441064,
+  bibtex_show={true},
+  pdf={ICCIT_399.pdf},
+  slides={399_Presentation_ICCIT_2023.pdf},
+  selected={true},
+  abbr={IEEE Conference},
+  google_scholar_id={d1gkVwhDpl0C},
+  author={Rahman, Asadullah Bin and Touhid Islam, Md. and Islam, Md. Rashedul and Sohrawordi, Md. and Sultan, Md. Nahid},
+  booktitle={2023 26th International Conference on Computer and Information Technology (ICCIT)}, 
+  title={Enhanced Brain Tumor Classification from MRI Images Using Deep Learning Model}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Dimensionality reduction;Deep learning;Transfer learning;Feature extraction;Discrete wavelet transforms;Image classification;Tumors;Contrast Enhanced MRI(CE-MRI);Brain Tumor;Discrete Wavelet Transformation(DWT);CNN},
+  doi={10.1109/ICCIT60459.2023.10441064}}
